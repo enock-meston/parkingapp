@@ -103,8 +103,8 @@ class PlaceFragment extends StatelessWidget {
           ),
         ],
       ),
-      body: FutureBuilder<List<ParkingModel>>(
-  future: parkingController.getParkingList(),
+      body: FutureBuilder<void>(
+  future: parkingController.fetchParkingList(),
   builder: (context, snapshot) {
     if (snapshot.connectionState == ConnectionState.waiting) {
       return Center(

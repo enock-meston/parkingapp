@@ -133,14 +133,14 @@ class CarDetailScreen extends StatelessWidget {
     String message =
         "Mukiriya Mwiza $ownerName  Tubashimiye Ko mwatugiriye Icyizere mukadusigira Imodoka yanyu ifite purake(Plate) No: $plate, Mwaciwe amafaranga angana na $price, Murakoze Twishimiye kuzongera gukorana namwe!";
     var data = {
-      "sender": 'Nigoote ltd',
+      "sender": 'PARKING',
       "recipients": "$phoneNumber",
       "message": "$message",
     };
 
     var url = Uri.parse("https://www.intouchsms.co.rw/api/sendsms/.json");
-    var username = "enock-meston";
-    var password = "Enock@123";
+    var username = "parking";
+    var password = "parking.parking";
 
     var response = await http.post(url,
         headers: <String, String>{
@@ -212,12 +212,13 @@ class CarDetailScreen extends StatelessWidget {
             middleText: "Car Paid successfully",
             confirm: ElevatedButton(
               onPressed: () {
+                sendMessage(phoneNumber, price, ownerName, plate);
                 Get.back();
               },
               child: Text("OK"),
             ),
           );
-          sendMessage(phoneNumber, price, ownerName, plate);
+          
         } else {
           // snackbar
           Get.snackbar(

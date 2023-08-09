@@ -188,7 +188,6 @@ class AddNewCarFragment extends StatelessWidget {
                         if (formKey.currentState!.validate()) {
                           // check if TextEditingControllers are empty
                           if (carPlateController.text.isEmpty ||
-                              carOwnerNamesController.text.isEmpty ||
                               carOwnerPhoneController.text.isEmpty) {
                             // show error message
                             Get.snackbar(
