@@ -210,7 +210,7 @@ class _AddNewCarFragmentState extends State<AddNewCarFragment> {
                             onChanged: (String? value) {
                               setState(() {
                                 selectedValue = value;
-                                print("selected value $selectedValue");
+                                // print("selected value $selectedValue");
                               });
                             },
                             buttonStyleData: ButtonStyleData(
