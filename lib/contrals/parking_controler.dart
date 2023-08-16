@@ -20,6 +20,7 @@ class ParkingController extends GetxController {
 
         if (data.containsKey('parking') && data['parking'] is List) {
           var parkings = data['parking'];
+          print('parking list: $parkings');
           List<ParkingModel> tempList = [];
 
           for (var i in parkings) {

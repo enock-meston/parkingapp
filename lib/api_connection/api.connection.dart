@@ -1,7 +1,7 @@
 class API{
   //  static const hostConnect = "https://parking.nigoote.com/android";
    static const hostConnect = "https://parking.cdmsnew.com/android";
-  //  static const hostConnect = "http://192.168.1.70/parkingweb/android";
+  //  static const hostConnect = "http://192.168.1.67/parkingweb/android";
    //sign in
     static const signIn = "$hostConnect/signin.php";
     

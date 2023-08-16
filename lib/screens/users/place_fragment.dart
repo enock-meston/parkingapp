@@ -94,14 +94,14 @@ class PlaceFragment extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         title: "Parking",
-        actions: [
-          IconButton(
-            onPressed: () {
-              Get.dialog(_buildFormDialog());
-            },
-            icon: const Icon(Icons.add),
-          ),
-        ],
+        // actions: [
+        //   IconButton(
+        //     onPressed: () {
+        //       Get.dialog(_buildFormDialog());
+        //     },
+        //     icon: const Icon(Icons.add),
+        //   ),
+        // ],
       ),
       body: FutureBuilder<void>(
   future: parkingController.fetchParkingList(),

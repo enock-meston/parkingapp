@@ -25,7 +25,7 @@ class CarController extends GetxController {
           carDataList.value = List<ViewCarModel>.from(cars.map((car) => ViewCarModel.fromJson(car)));
         } else {
           carDataList.clear(); // Clear the list if no data found
-          print("No car data found");
+          // print("No car data found");
         }
       } else {
         carDataList.clear(); // Clear the list on error

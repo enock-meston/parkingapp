@@ -37,12 +37,13 @@ class _MainFragmentState extends State<MainFragment> {
           });
         },
         children: [
-          AddNewCarFragment(),
+          AddNewCarFragment(), 
           PlaceFragment(),
           ViewCarFragment(),
           TransactionListView(),
           PayInHandsFragment(),
           ProfileFragment(),
+         
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

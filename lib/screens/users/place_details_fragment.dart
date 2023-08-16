@@ -78,18 +78,18 @@ class PlaceDetailsScreen extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          ElevatedButton(
-                            onPressed: () {
-                              // Implement the edit functionality here
-                              // Navigate to the edit screen or show a bottom sheet with edit form
-                            },
-                            child: Text("Edit"),
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                            ),
-                          ),
+                          // ElevatedButton(
+                          //   onPressed: () {
+                          //     // Implement the edit functionality here
+                          //     // Navigate to the edit screen or show a bottom sheet with edit form
+                          //   },
+                          //   child: Text("Edit"),
+                          //   style: ElevatedButton.styleFrom(
+                          //     shape: RoundedRectangleBorder(
+                          //       borderRadius: BorderRadius.circular(20),
+                          //     ),
+                          //   ),
+                          // ),
                         ],
                       ),
                     ],
